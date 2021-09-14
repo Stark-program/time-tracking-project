@@ -1,0 +1,52 @@
+/* GRID DISPLAY */
+.grid-container {
+  display: grid;
+  width: 95vw;
+  height: 95vh;
+  overflow: hidden;
+  grid-template-columns: [first] 10% [line2] 20% [line3] 20% [line4] 20% [line5] 20% [line6] 10%;
+  grid-template-rows: [row-1] 15% [row-2] 35% [row-3] 35% [row-4] 15%;
+}
+.user-information {
+  grid-column-start: line2;
+  grid-column-end: line3;
+  grid-row-start: row-2;
+  grid-row-end: row-4;
+}
+
+.first-item {
+  grid-column-start: line3;
+  grid-column-end: line4;
+  grid-row-start: row-2;
+  grid-row-end: row-3;
+}
+.second-item {
+  grid-column-start: line4;
+  grid-column-end: line5;
+  grid-row-start: row-2;
+  grid-row-end: row-3;
+}
+.third-item {
+  grid-column-start: line5;
+  grid-column-end: line6;
+  grid-row-start: row-2;
+  grid-row-end: row-3;
+}
+.fourth-item {
+  grid-column-start: line3;
+  grid-column-end: line4;
+  grid-row-start: row-3;
+  grid-row-end: row-4;
+}
+.fifth-item {
+  grid-column-start: line4;
+  grid-column-end: line5;
+  grid-row-start: row-3;
+  grid-row-end: row-4;
+}
+.sixth-item {
+  grid-column-start: line5;
+  grid-column-end: line6;
+  grid-row-start: row-3;
+  grid-row-end: row-4;
+}
